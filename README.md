@@ -7,5 +7,8 @@ To run these files, you need to install [Julia](http://julialang.org/downloads/)
   + Dierckx
   + DataFrames
   + ProgressMeter
+  + Roots
+  + JLD
 
-Open the notebook in `Jupyter` and run the code. It solves water-alternating-gas (WAG) and surfactant-alternating-gas (SAG) processes in 1D analytically and numerically, and in 2D numerically.
+Just open `Julia` and run `Pkg.add("package_name_from_above")`.  
+You can open the notebooks in `Jupyter` and run the code. It solves water-alternating-gas (WAG) and surfactant-alternating-gas (SAG) processes in 1D analytically and numerically, and in 2D numerically.
