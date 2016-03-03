@@ -215,7 +215,7 @@ function frac_flow_sag(;fmmob=25000.0, epdry=10000.0, fmdry=0.29,
     f_shock(sw)=(dfw(sw)-(fw(sw0)-fw(sw))./(sw0-sw))
     sw_shock = fzero(f_shock, [swc+eps(),1-sgr-eps()])
     s=collect(linspace(0.0,1.0,100))
-    s1 = collect(linspace(sw_inj, sw_shock, 500))
+    s1 = collect([linspace(sw_inj, swc, 100); linspace(swc+eps(), sw_shock, 1000)])
     xt_s1 = ut/phi*dfw(s1)
     xt_s = ut/phi*dfw(s)
     xt_shock = ut/phi*dfw(sw_shock)
